@@ -1,26 +1,100 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'd:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Users\\adamhe\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'run',
-1 verbose cli   'build' ]
+1 verbose cli   'publish' ]
 2 info using npm@3.10.5
 3 info using node@v4.4.5
-4 verbose stack Error: missing script: build
-4 verbose stack     at run (C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\lib\run-script.js:151:19)
-4 verbose stack     at C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\lib\run-script.js:61:5
-4 verbose stack     at C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:356:5
-4 verbose stack     at checkBinReferences_ (C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:320:45)
-4 verbose stack     at final (C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:354:3)
-4 verbose stack     at then (C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:124:5)
-4 verbose stack     at C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:243:12
-4 verbose stack     at C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-5 verbose cwd C:\Users\adamhe\AppData\Roaming\npm\node_modules\fis3-hook-tnpm
-6 error Windows_NT 6.1.7601
-7 error argv "d:\\Program Files\\nodejs\\node.exe" "C:\\Users\\adamhe\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "build"
-8 error node v4.4.5
-9 error npm  v3.10.5
-10 error missing script: build
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\adamhe\\AppData\\Roaming\\npm\\node_modules\\fis3-hook-tnpm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\adamhe\AppData\Roaming\npm-cache\fis3-hook-tnpm\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\adamhe\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle fis3-hook-tnpm@1.0.0~prepublish: fis3-hook-tnpm@1.0.0
+11 silly lifecycle fis3-hook-tnpm@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\adamhe\\AppData\\Roaming\\npm-cache\\fis3-hook-tnpm\\1.0.0\\package.tgz',
+12 verbose tar pack   'C:\\Users\\adamhe\\AppData\\Roaming\\npm\\node_modules\\fis3-hook-tnpm' ]
+13 verbose tarball C:\Users\adamhe\AppData\Roaming\npm-cache\fis3-hook-tnpm\1.0.0\package.tgz
+14 verbose folder C:\Users\adamhe\AppData\Roaming\npm\node_modules\fis3-hook-tnpm
+15 verbose addLocalTarball adding from inside cache C:\Users\adamhe\AppData\Roaming\npm-cache\fis3-hook-tnpm\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\adamhe\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd fis3-hook-tnpm@1.0.0
+18 verbose afterAdd C:\Users\adamhe\AppData\Roaming\npm-cache\fis3-hook-tnpm\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\adamhe\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\adamhe\AppData\Roaming\npm-cache\fis3-hook-tnpm\1.0.0\package\package.json written
+21 silly publish { name: 'fis3-hook-tnpm',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'fis3 tnpm 打包',
+21 silly publish   main: 'index.js',
+21 silly publish   dependencies: { 'compare-version': '^0.1.2' },
+21 silly publish   devDependencies: {},
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [ 'fis3' ],
+21 silly publish   author: { name: 'adamhe' },
+21 silly publish   license: 'ISC',
+21 silly publish   readme: '# fis3-hook-lego\nfis3 版本的 `lego` 包管理的模块查找，[http://lego.imweb.io/](http://lego.imweb.io/) 。\n\n## 背景\n如下目录结构：\n\n```\n    .\n    ├── index.html\n    ├── lego_modules\n    │   ├── dialog\n    │   │   └── 0.1.0\n    │   │       ├── custom.js\n    │   │       └── package.json\n    │   ├── slider\n    │   │   └── 0.1.0\n    │   │       └── index.js\n    │   ├── tab\n    │   │   └── 0.1.0\n    │   │       └── tab.js\n    │   └── test_module\n    │       └── 0.1.0\n    │           └── index.js\n    ├── map.json\n    ├── modules\n    │   ├── common\n    │   │   ├── common.js\n    │   │   └── header\n    │   │       ├── db.header.js\n    │   │       └── header.js\n    │   ├── common.js\n    │   ├── index\n    │   │   └── header\n    │   │       ├── db.header.js\n    │   │       └── header.js\n    │   └── test_module.js\n    └── pages\n        └── index\n            ├── main.css\n            └── main.js\n```\n现在 `main.js ` 内容：\n\n```js\nvar dialog = require(\'dialog\');\nvar slider = require(\'slider\');\nvar tab = require(\'tab\');   // lego_modules 中的快速引用\nvar version = require(\'versions@0.1.0\'); // 指定版本\nvar common = require(\'common\');\nvar testModule = require(\'test_module\');\nvar header = require(\'index/header\');   // modules 中也可以省去 `modules`\nvar index = require(\'index\'); // 查找modules/index.js ; modules/index/index.js\n```\n\n\n## 使用\n\n### 安装\n```\nnpm i fis3-hook-lego -g\n```\n\n### 配置\n在 `fis-conf.js` 中：\n```js\nfis.hook(\'lego\');\n\nfis.match(/^\\/modules\\/(.+)\\.js$/, {\n        isMod: true,\n        id: \'$1\'\n    })\n    .match(/^\\/modules\\/((?:[^\\/]+\\/)*)([^\\/]+)\\/\\2\\.(js)$/i, {\n        //isMod: true,\n        id: \'$1$2\'\n    })\n    .match(/^\\/lego_modules\\/(.+)\\.js$/i, {\n        isMod: true,\n        id: \'$1\'\n    });\n```\n\n### 注意\n由于有多版本的场景，lego会修改文件id，`比如require(\'zepto\'), 产出后是 require(\'zepto/1.1.6/zepto\')`,\n其他插件的配置中需要zepto时，比如 ignore: [\'zepto\']，查找会有问题，解决方案：\n\n1. ignore: [\'zepto/1.1.6/zepto\']，指定具体的版本\n\n2. 在处理逻辑之前，调用 fis.get(\'idMaps\'), 将zepto的id进行转化（ps：idMaps中记录了lego对文件id的修改，key值是修改前的id，value是修改后的id）    \n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'a0a1e46899abd294fcc867434ba880ea2746c910',
+21 silly publish   _id: 'fis3-hook-tnpm@1.0.0',
+21 silly publish   _shasum: '0808ab286bd71eb9f5eb8c55108c01e1bef87233',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name fis3-hook-tnpm
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.cnpmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'fis3-hook-tnpm',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'fis3-hook-tnpm',
+26 silly mapToRegistry   name: 'fis3-hook-tnpm',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.cnpmjs.org/fis3-hook-tnpm
+28 verbose publish registryBase http://registry.cnpmjs.org/
+29 silly publish uploading C:\Users\adamhe\AppData\Roaming\npm-cache\fis3-hook-tnpm\1.0.0\package.tgz
+30 verbose request uri http://registry.cnpmjs.org/fis3-hook-tnpm
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 13:09:16
+33 verbose request id c59f2058a5b4e411
+34 http request PUT http://registry.cnpmjs.org/fis3-hook-tnpm
+35 http 403 http://registry.cnpmjs.org/fis3-hook-tnpm
+36 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+36 verbose headers   date: 'Wed, 17 Aug 2016 05:09:16 GMT',
+36 verbose headers   'content-type': 'application/json; charset=utf-8',
+36 verbose headers   'transfer-encoding': 'chunked',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-current-requests': '1',
+36 verbose headers   'x-readtime': '8',
+36 verbose headers   'content-encoding': 'gzip' }
+37 verbose request invalidating C:\Users\adamhe\AppData\Roaming\npm-cache\registry.cnpmjs.org\fis3-hook-tnpm on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: no_perms can't publish non-scoped package, please set `config.scopes`: fis3-hook-tnpm
+39 verbose stack     at makeError (C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+39 verbose stack     at C:\Users\adamhe\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:178:7
+39 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+39 verbose stack     at emitNone (events.js:72:20)
+39 verbose stack     at Gunzip.emit (events.js:166:7)
+39 verbose stack     at endReadableNT (_stream_readable.js:913:12)
+39 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+39 verbose stack     at process._tickCallback (node.js:356:17)
+40 verbose statusCode 403
+41 verbose pkgid fis3-hook-tnpm
+42 verbose cwd C:\Users\adamhe\AppData\Roaming\npm\node_modules\fis3-hook-tnpm
+43 error Windows_NT 6.1.7601
+44 error argv "d:\\Program Files\\nodejs\\node.exe" "C:\\Users\\adamhe\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error node v4.4.5
+46 error npm  v3.10.5
+47 error code E403
+48 error no_perms can't publish non-scoped package, please set `config.scopes`: fis3-hook-tnpm
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
